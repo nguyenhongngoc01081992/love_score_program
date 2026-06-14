@@ -1,0 +1,18 @@
+def calculate_love_score(name1, name2):
+    nr_true = 0
+    nr_love = 0
+    for i in name1:
+        if i in "true":
+            nr_true += 1 
+        if i in "love":
+            nr_love += 1
+    for j in name2:
+        if j in "true":
+            nr_true += 1 
+        if j in "love":
+            nr_love += 1
+    
+        
+    print(str(nr_true) + str(nr_love))
+
+calculate_love_score("Kanye West", "Ki Kardashian")    
